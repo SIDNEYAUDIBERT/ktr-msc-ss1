@@ -6,16 +6,10 @@ attr_accessor :agility
 attr_accessor :strength
 attr_accessor :wit
 
-
   def initialize(name_to_save, rpgclass_to_save)
     @name = name_to_save
     @rpgclass = rpgclass_to_save
   end
-
-
-  
-
-
 
 end
 
@@ -77,7 +71,6 @@ end
 class Mage < Character
 
 
-
     def initialize(name_to_save)
     
         @name = name_to_save
@@ -93,8 +86,6 @@ class Mage < Character
     
         def attack(weapon, player)
     
-            
-
             if weapon == "magic" or weapon == "wand" and @weapon_state == 1 then
                 puts("#{player.name} : Rrrrrrrr....")
                 puts("#{name} : Feel the power of my #{weapon} !")
